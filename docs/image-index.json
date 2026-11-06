@@ -1,0 +1,83 @@
+[
+  {
+    "file": "images/figure-01.png",
+    "caption": "Creating a VM Running Windows 10"
+  },
+  {
+    "file": "images/figure-02.png",
+    "caption": "Creating the Network Security Group and Inbound Security Rule"
+  },
+  {
+    "file": "images/figure-03.png",
+    "caption": "Creating the Log Analytic Workspace"
+  },
+  {
+    "file": "images/figure-04.png",
+    "caption": "Connecting the VM and the LAW"
+  },
+  {
+    "file": "images/figure-05.png",
+    "caption": "Adding Microsoft Sentinel to the LAW"
+  },
+  {
+    "file": "images/figure-06.png",
+    "caption": "Using RDP to Connect to the VM"
+  },
+  {
+    "file": "images/figure-07.png",
+    "caption": "Signing Into the VM"
+  },
+  {
+    "file": "images/figure-08.png",
+    "caption": "Ipgeolocation.io"
+  },
+  {
+    "file": "images/figure-09.png",
+    "caption": "Failed Attempt to Login Shown in Event Viewer"
+  },
+  {
+    "file": "images/figure-10.png",
+    "caption": "Disabling Windows Firewall"
+  },
+  {
+    "file": null,
+    "omitted_reason": "Contains an exposed API credential; original image not included in repository.",
+    "caption": "Running the PowerShell Script"
+  },
+  {
+    "file": "images/figure-12.png",
+    "caption": "Creating the Custom Log"
+  },
+  {
+    "file": "images/figure-13.png",
+    "caption": "Running the Custom Log Query"
+  },
+  {
+    "file": "images/figure-14.png",
+    "caption": "Extracting the Data"
+  },
+  {
+    "file": "images/figure-15.png",
+    "caption": "Checking the Results of the Query"
+  },
+  {
+    "file": "images/figure-16.png",
+    "caption": "Custom Values Displaying Properly"
+  },
+  {
+    "file": "images/figure-17.png",
+    "caption": "Creating the Workbook"
+  },
+  {
+    "file": "images/figure-18.png",
+    "caption": "Setting up the Map"
+  },
+  {
+    "file": "images/figure-19.png",
+    "caption": "The Completed Map!"
+  },
+  {
+    "file": "images/figure-20.png",
+    "caption": "A few Days Later, Many Other Countries Attacking"
+  }
+]
