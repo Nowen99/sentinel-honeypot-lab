@@ -1,0 +1,10 @@
+.env
+.env.*
+*.key
+*.pem
+*.vhd
+*.vhdx
+*.vdi
+*.iso
+.DS_Store
+Thumbs.db
