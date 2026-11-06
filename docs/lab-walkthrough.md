@@ -1,5 +1,5 @@
-> By Noah Owen · Originally published September 15, 2022 · [Medium source](https://nowencyber.medium.com/in-this-lab-i-setup-azure-sentinel-siem-and-connect-it-to-a-live-virtual-machine-acting-as-a-5dd6e6ef7122)
-> Historical article migrated to Markdown in November 2026. Original wording retained; this is not a newly executed lab.
+> By Noah Owen · Lab completed: September 15, 2022
+> Screenshots and steps document the 2022 lab environment.
 
 # In This Lab, I Setup Azure Sentinel (SIEM) and Connected it to a Live Virtual Machine Acting as a Honey Pot
 
@@ -53,7 +53,7 @@ To proceed, I disabled the Windows firewall to permit anyone to attack the machi
 
 *Disabling Windows Firewall*
 
-> Screenshot omitted from this migration because it contains an exposed API credential. The original caption is retained below.
+> Screenshot omitted because it contains an exposed API credential. The caption is retained below.
 
 *Running the PowerShell Script*
 

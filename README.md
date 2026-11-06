@@ -2,17 +2,17 @@
 
 An Azure learning lab collecting failed Windows RDP sign-ins, enriching source IPs with geolocation data, and visualizing the results in Microsoft Sentinel.
 
-**By Noah Owen Â· Original lab: September 15, 2022 Â· Documentation migrated: November 2026**
+**By Noah Owen · Lab completed: September 15, 2022**
 
-[Full lab write-up](docs/original-article.md) Â· [Original Medium article](https://nowencyber.medium.com/in-this-lab-i-setup-azure-sentinel-siem-and-connect-it-to-a-live-virtual-machine-acting-as-a-5dd6e6ef7122) Â· [Attribution](#attribution)
+[Lab walkthrough](docs/lab-walkthrough.md) · [Screenshots](#screenshots) · [Attribution](#attribution)
 
 ## Project status
 
-This repository preserves a completed learning lab from 2022. It contains the original article and locally stored figures (one credential-bearing screenshot omitted), with a new project overview. The environment has not been rebuilt or retested for this migration. Screenshots document the original environment; they do not establish that it is currently deployed.
+This repository documents a completed learning lab from 2022. The walkthrough and screenshots describe the environment at that time. It has not been rebuilt or retested since; the screenshots do not establish that it is currently deployed.
 
 ## Technologies
 
-Microsoft Azure Â· Microsoft Sentinel (formerly Azure Sentinel) Â· Windows 10 VM Â· Log Analytics Â· PowerShell Â· Windows Event Viewer Â· IP geolocation Â· Sentinel workbooks
+Microsoft Azure · Microsoft Sentinel (formerly Azure Sentinel) · Windows 10 VM · Log Analytics · PowerShell · Windows Event Viewer · IP geolocation · Sentinel workbooks
 
 ## Lab workflow
 
@@ -31,18 +31,34 @@ Microsoft Azure Â· Microsoft Sentinel (formerly Azure Sentinel) Â· Windows 1
 
 **Historical lab boundary:** The original experiment deliberately allowed broad inbound access and disabled the VM firewall to attract traffic. This is documented historical behavior, not a recommended configuration for a support or production environment. Geographic points represent IP geolocation estimates, not verified attacker identities.
 
+## Screenshots
+
+### Parsed failed sign-in logs
+
+![Parsed failed sign-in logs](images/figure-16.png)
+
+Extracted geographic fields in Log Analytics.
+
+### Sentinel failed RDP sign-in map
+
+![Sentinel failed RDP sign-in map](images/figure-20.png)
+
+The workbook map showing the geographic distribution of source IP addresses.
+
+[See the full walkthrough and screenshot sequence →](docs/lab-walkthrough.md)
+
 ## Repository contents
 
 | Path | Contents |
 | --- | --- |
-| [docs/original-article.md](docs/original-article.md) | Original article text, available figures, and captions |
-| [images/](images/) | 19 of 20 article figures; credential-bearing image omitted |
-| [docs/image-sources.json](docs/image-sources.json) | Original figure URLs and local filenames |
+| [docs/lab-walkthrough.md](docs/lab-walkthrough.md) | Lab walkthrough, available figures, and captions |
+| [images/](images/) | 19 lab figures; one credential-bearing screenshot omitted |
+| [docs/image-index.json](docs/image-index.json) | Local figure filenames and captions |
 
-No VM images, original scripts, exported queries, deployment templates, or live credentials were recovered from the article. Screenshots of code are historical evidence, not executable source files.
+This repository does not include VM images, executable scripts, exported queries, deployment templates, or live credentials. Screenshots of code are historical evidence, not executable source files.
 
 ## Attribution
 
-The article credits [Josh Madakorâ€™s SIEM Tutorial for Beginners](https://www.youtube.com/watch?v=H8W9oMNSuwo&list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ). The original PowerShell script was downloaded for the exercise; its source was not recovered and is not claimed as original work. The article also references [ipgeolocation.io](https://ipgeolocation.io/).
+This lab follows [Josh Madakor’s SIEM Tutorial for Beginners](https://www.youtube.com/watch?v=H8W9oMNSuwo&list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ). The original PowerShell script was downloaded for the exercise; its source is not included here and is not claimed as original work. The lab also uses [ipgeolocation.io](https://ipgeolocation.io/).
 
-The original article is by [Noah Owen](https://github.com/Nowen99). Referenced third-party material retains its original ownership; this migration does not claim authorship of those resources or grant a new license for them.
+This lab is documented by [Noah Owen](https://github.com/Nowen99). Referenced third-party material retains its original ownership; this repository does not claim authorship of those resources or grant a new license for them.
